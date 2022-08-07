@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: CircularXX, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+}
+
+/* ---------------HEADER-----NAVBAR Styling------------- */
+.nav{
+    background-color: #444;
+    display: flex;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+li:hover{
+    transform: scale(1.05);
+
+}
+
+@media only screen and (max-width: 500px) {
+    .nav {
+        font-size: 0.5em;
+        padding: 8px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .logo-img {
+        padding-bottom: 100px;
+    }
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: large;
+}
+
+.push{
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+
+/* -------------MAIN -- Cover Area------------ */
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00ADB5;
+    color: white;
+    height: 100vh;
+    width: 98.95vw;
+    font-size: 2em;
+}
+
+/* -------------MAIN -- Course and its items------------ */
+.c-head{
+    color: rgb(41, 37, 37);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0px 40px 0px 40px;
+}
+
+.grid-image > img{
+    width: 100%;
+}
+.grid-image{
+    background-color: #444;
+    padding: 80px;
+    margin:20px;
+}
+.load-more{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+.btn{
+    background-color: #00ADB5;
+    color: white;
+    padding: 10px;
+    border-color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* -------FOOTER-----Styling----------------- */
+.footer{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ftr-content{
+    padding: 2rem 2.5rem;
+    color: #c4c4c4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.logo-img{
+   padding-top: 150px;
+}
+img[alt = "logo-img"]{
+    width: 100px;
+}
+.fl-items{
+    padding: 0.5rem;
+}
+.interest, .programs, .research, .about, .resources {
+    color: white;
+    font-size: large;
+    text-align: left;
+    font-weight: 650;
+}
